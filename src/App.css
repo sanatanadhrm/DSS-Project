@@ -1,0 +1,42 @@
+/* App.css */
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.full-screen {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Remove padding to avoid scrolling */
+  margin-top: 64px; /* Adjust based on the height of your navbar */
+  width: 100%;
+}
+
+.outlet-container {
+  width: 100%;
+  height: 100%;
+}

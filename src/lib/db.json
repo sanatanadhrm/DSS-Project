@@ -1,0 +1,69 @@
+{
+  "ParkingSection": {
+    "depan": [
+      {
+        "section_1": "lurus sampai (T11) lalu belok kiri"
+      },
+      {
+        "section_2": "lurus sampai (T10) lalu belok kiri"
+      },
+      {
+        "section_3": "lurus sampai (T9) lalu belok kiri"
+      },
+      {
+        "section_4": "lurus sampai (T8) lalu belok kiri"
+      },
+      {
+        "section_5": "lurus sampai (T11) lalu belok kiri dan lurus sampai mentok"
+      },
+      {
+        "section_6": "lurus sampai lahan parkir"
+      },
+      {
+        "section_7": "lurus sampai (T7) lalu belok kiri"
+      },
+      {
+        "section_8": "lurus sampai (T7) lahan ada setalah (T7)"
+      },
+      {
+        "section_9": "lurus sampai (T8) lahan parkir ada di kanan sepanjang jalan"
+      },
+      {
+        "section_10": "lurus sampai (T11) lahan parkir ada di kiri sepanjang jalan"
+      }
+    ],
+
+    "belakang": [
+      {
+        "section_1": "belok kiri pada (T1)"
+      },
+      {
+        "section_2": "lurus sampai (T2) lalu belok kiri"
+      },
+      {
+        "section_3": "lurus sampai (T3) lalu belok kiri"
+      },
+      {
+        "section_4": "lurus sampai (T4) lalu belok kiri"
+      },
+      {
+        "section_5": "lurus sampai lahan parkiran di kanan anda"
+      },
+      {
+        "section_6": "lurus sampai (T5) lalu belok kiri"
+      },
+      {
+        "section_7": "lurus sampai (T5) belok kiri lurus sampai (T6) lurus sampai (T7) lalu belok kiri"
+      },
+      {
+        "section_8": "lurus sampai (T5) belok kiri dan lurus sampai (T6) lurus, dalah setelah (T7)"
+      },
+      {
+        "section_9": "lururs sampai (T4) belok kiri dan lurus sampai mentok, lahan parkir ada di kanan sepanjang jalan"
+      },
+      {
+        "section_10": "belok kiri dan lurus sampai mentokm lahan parkir ada di kiri sepanjang jalan"
+      }
+    ]
+  }
+}
