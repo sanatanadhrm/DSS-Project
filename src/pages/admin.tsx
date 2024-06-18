@@ -1,24 +1,25 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button, Card, Form, Select } from "antd";
 import { useEffect } from "react";
 import maps from "../assets/image.png";
-import useAdminStore from "../store/useAdminStore.js";
+import useAdminStore from "../store/useAdminStore.ts";
 
 export const AdminPage = () => {
   const [form] = Form.useForm();
-  const { sections, setSection } = useAdminStore();
+  const { sections, setSection }: any = useAdminStore();
 
   useEffect(() => {
     form.setFieldsValue(sections);
   }, [form, sections]);
 
-  const onFinish = (values) => {
+  const onFinish = (values: any) => {
     for (const section in values) {
       setSection(section, values[section]);
     }
     console.log("Success:", values);
   };
 
-  const onFinishFailed = (errorInfo) => {
+  const onFinishFailed = (errorInfo: any) => {
     console.log("Failed:", errorInfo);
   };
 

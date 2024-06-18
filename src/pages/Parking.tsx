@@ -1,8 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Card } from "antd";
-import { MappingComp } from "../components/Mapping";
 import db from "../lib/db.json";
 import { useEffect, useState } from "react";
-import useAdminStore from "../store/useAdminStore.js";
+import useAdminStore from "../store/useAdminStore.ts";
 import maps from "../assets/maps.png";
 
 export const ParkingPage = () => {
@@ -11,14 +11,16 @@ export const ParkingPage = () => {
   const [filter, setFilter] = useState<any>([]);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const dbParking: any = db.ParkingSection;
-  const { sections } = useAdminStore();
+  const { sections }: any = useAdminStore();
   useEffect(() => {
     if (postiion === "") return;
     const handleFully = () => {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const list: any[] = [];
-      dbParking[postiion].map((item: string) => {
-        if (sections[Object.keys(item)] === "not_full") {
+      dbParking[postiion].map((item: Record<string, string>) => {
+        // Change the type of item
+        if (sections[Object.keys(item)[0]] === "not_full") {
+          // Access the first key of item
           list.push(item);
         }
       });
